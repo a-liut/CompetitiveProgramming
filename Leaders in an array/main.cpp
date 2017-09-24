@@ -3,7 +3,7 @@
 // this function will calculate the leaders and store
 // them in res array.
 void leaders(int a[], int n, int res[], int* resDim) {
-	// minimum value according to constraint 0 <= a[i] <= 100, for each 0 <= i <= n
+	// minimum value according to constraint: 0 <= a[i] <= 100, for each 0 <= i <= n
     int max = -1;
 
     *resDim = 0;
