@@ -12,7 +12,7 @@ The water trapped in the column i of the elevation map is calculated as follows:
 				0
 		)
 
-The algorith do three scan of the array.
+The algorithm do three scan of the array.
 The first scan finds the right maximum of every element. To do so, just scan the array from the end to the start and store the maximum element.
 
 The second scan finds the left maximum of every element, like we found right maximums in the first scan but from start from end.
