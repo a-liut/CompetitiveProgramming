@@ -1,128 +1,75 @@
 #include <iostream>
 #include <algorithm>
-using namespace std;
 
-// This function calculate how much water is trapped in the elevation map.
-int calculateWater(int map[], int n)
+// max array size according to problem constraints
+#define SIZE 100
+
+// this function returns the trapped water by the elevation map after raining.
+int calculateWater(int a[], int n)
 {
-	cout << "[";
-	for(int i = 0; i < n; i++) {
-		cout << map[i] << ",";
-	}
-	cout << "]" << endl;
+    int rmax[n], lmax[n], max, i, water = 0;
 
-
-	int absMax = 0, localMax = 0, localMin = 0, water = 0, sum = 0, base = 0;
-
-	for(int i = 0; i < n; i++)
-	{
-
-		if(map[i] >= map[absMax]) {
-			// new abs max or flat found
-			absMax = i;
-			s = 0;
-		} else {
-			
-		}
-
-		// a new ansolute max or a flat is discovered
-		if(map[i] >= map[absMax]) {
-
-			// calculate water
-			base = localMin - absMax;
-			area = base * std::min(map[i], map[absMax]);
-			water = water + area - sum;
-
-			s = area
-
-
-			absMax = i;
-			s = 0;
-		} else {
-
-		}
-	}
-
-
-
-
-
-
-	// infinite is 10, according to constraint 0 <= arr[i] < 10
-    int max = 0, ground = 0, water = 0, s = 0;
-    for(int i = 1; i < n; i++)
+    max = n - 1;
+    rmax[max] = 0;
+    // 1st iteration to obtain right maximums
+    for(i = n - 2; i >= 0; i--)
     {
-    	cout << "evaluating map[" << i << "] = " << map[i] << endl;
-    	if(ground > -1 && map[max] > map[i] && map[ground] < map[i]) {
-    		int base, area, localMin;
-    		base = ground - max;
-    		localMin = std::min(map[max] - map[groud], map[i] - map[groud]);
-    		area = base * localMin;
+        // store right maximum for column i
+        rmax[i] = a[max];
 
-    		cout << "base = " << base << endl;
-    		cout << "ground = " << ground << endl;
-    		cout << "localMin = " << localMin << endl;
-    		cout << "area = " << area << endl;
-    		cout << "s = " << s << endl;
-
-    		water = water + area - s;
-    		ground = i;
-
-    		cout << "water = " << water << endl;
-
-    		s = (base + 1) * localMin;
-
-    		cout << "1>>s = " << s << endl;
-    	}
-
-
-    	if(ground == -1 || map[i] <= map[ground]) {
-    		s = s + map[i];
-    		ground = i;
-    		cout << "3>>s = " << s << endl;
-    	}
-    	if(max == -1 || map[i] >= map[max]) {
-    		max = i;
-    		s = 0;
-    		cout << "2>>s = " << s << endl;
-    	}
+        if(a[i] >= a[max])
+        {
+            // update maximum
+            max = i;
+        }
     }
 
-    cout << "water = " << water << endl;
-    // return quantity of water
+    // 2nd scan to obtain left maximums
+    max = 0;
+    lmax[max] = 0;
+    for(i = 0; i < n; i++)
+    {
+        // store left maximum for column i
+        lmax[i] = a[max];
+        if(a[i] >= a[max])
+        {
+            // update minimum
+            max = i;
+        }
+    }
+
+    // 3rd scan to calculate water
+    for(i = 0; i < n; i++)
+    {
+        water = water + std::max(
+                    std::min(rmax[i], lmax[i]) - a[i],
+                    0
+                );
+    }
     return water;
 }
 
 int main()
 {
+    int T, a[SIZE], n;
 
-    int cases, a[100], n;
+    // read test T
+    std::cin >> T;
 
-    // read test cases
-    cout << "insert cases number" << endl;
-    cin >> cases;
-
-    while(cases > 0)
+    for(int t = 0; t < T; t++)
     {
-
         // read array size
-        cout << "insert n for test " << cases << endl;
-        cin >> n;
+        std::cin >> n;
 
         // fill the array
         for(int i = 0; i < n; i++)
         {
-            cout << "insert value " << i << endl;
-            cin >> a[i];
+            std::cin >> a[i];
         }
 
         // calculate result and print to stdout
-        cout << calculateWater(a, n) << endl;
-
-        // decrement case number
-        cases--;
+        std::cout << calculateWater(a, n) << std::endl;
     }
-
 
     return 0;
 }
