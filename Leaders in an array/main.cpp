@@ -1,52 +1,56 @@
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <stack>
 
-// this function will calculate the leaders and store
-// them in res array.
-void leaders(int a[], int n, int res[], int* resDim) {
-	// minimum value according to constraint: 0 <= a[i] <= 100, for each 0 <= i <= n
-    int max = -1;
+using namespace std;
 
-    *resDim = 0;
+const int MAX_ELEM_NO = 100;
 
-    // scan the array starting from last element
-    // storing the maximum
-    for(int i = n - 1; i >= 0; i--) {
-        if(a[i] > max) {
-        	// a[i] is a leader, so store it in the result array
-            res[*resDim] = a[i];
-            max = a[i];
-            *resDim = *resDim + 1;
+void leaders(vector<int> &items, stack<int> &result)
+{
+    int max = *items.rbegin();
+    result.push(max);
+
+    for (vector<int>::reverse_iterator it = items.rbegin() + 1; it != items.rend(); ++it)
+    {
+        if (*it >= max)
+        {
+            result.push(*it);
+            max = *it;
         }
     }
 }
 
-int main() {
-    // max array size according to problem constraints
-    const int SIZE = 100;
-    int tests, n, a[SIZE], res[SIZE], resDim;
+int main()
+{
+    int T, N, x;
+    vector<int> items;
+    stack<int> results;
 
-    // read tests number
-    scanf("%d", &tests);
+    cin >> T;
 
-    for(int i = 0; i < tests; i++) {
-        // read array size
-        scanf("%d", &n);
+    items.reserve(MAX_ELEM_NO);
 
-        // fill array
-        for(int j = 0; j < n; j++) {
-            scanf("%d", &a[j]);
+    for (int i = 0; i < T; i++)
+    {
+        cin >> N;
+
+        for (int k = 0; k < N; k++)
+        {
+            cin >> x;
+            items.push_back(x);
         }
 
-        // calculate leaders
-        leaders(a, n, res, &resDim);
+        leaders(items, results);
 
-        // print result
-        printf("%d", res[--resDim]);
-        for(int k = resDim - 1; k >= 0; k--) {
-            printf(" %d", res[k]);
+        while (!results.empty())
+        {
+            cout << results.top() << " ";
+            results.pop();
         }
-        printf("\n");
+
+        cout << endl;
+
+        items.clear();
     }
-
-    return 0;
 }
