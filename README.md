@@ -5,7 +5,7 @@
 - [x] Leaders in array (http://practice.geeksforgeeks.org/problems/leaders-in-an-array/0)
 - [x] Kadane's algorithm (http://practice.geeksforgeeks.org/problems/kadanes-algorithm/0)
 - [x] Missing number in array (http://practice.geeksforgeeks.org/problems/missing-number-in-array/0)
-- [ ] Trapping rain water (http://practice.geeksforgeeks.org/problems/trapping-rain-water/0)
+- [x] Trapping rain water (http://practice.geeksforgeeks.org/problems/trapping-rain-water/0)
 - [ ] Sliding window maximum (http://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0)
 - [ ] Next larger element (http://practice.geeksforgeeks.org/problems/next-larger-element/0)
 - [ ] Towers (http://codeforces.com/problemset/problem/37/A?locale=en)
