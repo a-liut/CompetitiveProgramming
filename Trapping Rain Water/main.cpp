@@ -1,23 +1,23 @@
 #include <iostream>
+#include <vector>
 #include <algorithm>
 
-// max array size according to problem constraints
-#define SIZE 100
+using namespace std;
 
-// this function returns the trapped water by the elevation map after raining.
-int calculateWater(int a[], int n)
+int calculate_water(vector<int> a)
 {
+    int n = a.size();
     int rmax[n], lmax[n], max, i, water = 0;
 
     max = n - 1;
     rmax[max] = 0;
     // 1st iteration to obtain right maximums
-    for(i = n - 2; i >= 0; i--)
+    for (i = n - 2; i >= 0; i--)
     {
         // store right maximum for column i
         rmax[i] = a[max];
 
-        if(a[i] >= a[max])
+        if (a[i] >= a[max])
         {
             // update maximum
             max = i;
@@ -27,11 +27,11 @@ int calculateWater(int a[], int n)
     // 2nd scan to obtain left maximums
     max = 0;
     lmax[max] = 0;
-    for(i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         // store left maximum for column i
         lmax[i] = a[max];
-        if(a[i] >= a[max])
+        if (a[i] >= a[max])
         {
             // update minimum
             max = i;
@@ -39,37 +39,36 @@ int calculateWater(int a[], int n)
     }
 
     // 3rd scan to calculate water
-    for(i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         water = water + std::max(
-                    std::min(rmax[i], lmax[i]) - a[i],
-                    0
-                );
+                            std::min(rmax[i], lmax[i]) - a[i],
+                            0);
     }
     return water;
 }
 
 int main()
 {
-    int T, a[SIZE], n;
+    int T, N, x;
+    vector<int> items;
 
-    // read test T
-    std::cin >> T;
+    cin >> T;
 
-    for(int t = 0; t < T; t++)
+    for (int i = 0; i < T; i++)
     {
-        // read array size
-        std::cin >> n;
+        cin >> N;
 
-        // fill the array
-        for(int i = 0; i < n; i++)
+        items.reserve(N);
+
+        for (int k = 0; k < N; k++)
         {
-            std::cin >> a[i];
+            cin >> x;
+            items.push_back(x);
         }
 
-        // calculate result and print to stdout
-        std::cout << calculateWater(a, n) << std::endl;
-    }
+        cout << calculate_water(items) << endl;
 
-    return 0;
+        items.clear();
+    }
 }
