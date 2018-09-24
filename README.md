@@ -3,7 +3,7 @@
 ## Problems (58)
 * Introduction
 - [x] Leaders in array (http://practice.geeksforgeeks.org/problems/leaders-in-an-array/0)
-- [ ] Kadane's algorithm (http://practice.geeksforgeeks.org/problems/kadanes-algorithm/0)
+- [x] Kadane's algorithm (http://practice.geeksforgeeks.org/problems/kadanes-algorithm/0)
 - [ ] Missing number in array (http://practice.geeksforgeeks.org/problems/missing-number-in-array/0)
 - [ ] Trapping rain water (http://practice.geeksforgeeks.org/problems/trapping-rain-water/0)
 - [ ] Sliding window maximum (http://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0)
