@@ -1,49 +1,76 @@
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <deque>
 #include <algorithm>
 
-// this method return the sum of the maximum sum of the contiguous sub-array of array a
-int sum_of_max_sub_array(int a[], int n)
+using namespace std;
+
+void sum_of_max_sub_array(vector<int> const &items, int k, vector<int> &results)
 {
-    // start with the first sub-array, that is just the first element
-    int current = a[0], max = a[0];
+    results.clear();
+    deque<int> maxs;
 
-    for(int i = 1; i < n; i++)
+    for (int i = 0; i < items.size(); i++)
     {
-        // the optimal sub-array at position i has the optimal sub-array
-        // found at position i-1 as a prefix or not if the current element is
-        // a better sub-array.
-        current = std::max(current + a[i], a[i]);
 
-        // the absolute maximum is the current maximum found or a previous one.
-        max = std::max(current, max);
+        if (!maxs.empty() && maxs.front() < i - k + 1)
+        {
+            maxs.pop_front();
+        }
+
+        int current = items[i];
+
+        if (!maxs.empty() && current > items[maxs.front()])
+        {
+            maxs.clear();
+            maxs.push_back(i);
+        }
+        else
+        {
+            while (!maxs.empty() && items[maxs.back()] < current)
+            {
+                maxs.pop_back();
+            }
+
+            maxs.push_back(i);
+        }
+
+        if (i >= k - 1)
+        {
+            results.push_back(items[maxs.front()]);
+        }
     }
-
-    return current;
 }
 
 int main()
 {
-    // array size according problem constraints
-    const int SIZE = 1000;
-    int T = 0, N = 0, a[SIZE];
+    int T, N, k, x;
+    vector<int> items;
+    vector<int> result;
 
-    // read test number
-    scanf("%d", &T);
+    cin >> T;
 
-    for(int i = 0; i < T; i++)
+    for (int i = 0; i < T; i++)
     {
-        // read test array size
-        scanf("%d", &N);
+        cin >> N;
+        cin >> k;
 
-        for(int j = 0; j < N; j++)
+        items.reserve(N);
+
+        for (int k = 0; k < N; k++)
         {
-            // fill the array
-            scanf("%d", &a[j]);
+            cin >> x;
+            items.push_back(x);
         }
 
-        // print the current solution
-        printf("%d\n", sum_of_max_sub_array(a, N));
-    }
+        sum_of_max_sub_array(items, k, result);
 
-    return 0;
+        for (int res : result)
+        {
+            cout << res << " ";
+        }
+        cout << endl;
+
+        items.clear();
+    }
 }
