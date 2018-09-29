@@ -2,15 +2,16 @@
 #include <vector>
 #include <algorithm>
 
-// this method print the height of the largest tower and the number of towers.
-void towers(std::vector<int>::iterator first, std::vector<int>::iterator last)
+using namespace std;
+
+void towers(vector<int> bars)
 {
     int count = 0, last_seen = -1, max_occurrencies = -1, occurrencies = 0;
 
     // first sort the array
-    std::sort(first, last, std::less<int>());
+    sort(bars.begin(), bars.end(), less<int>());
 
-    for(std::vector<int>::iterator it = first; it != last; it++)
+    for(vector<int>::iterator it = bars.begin(); it != bars.end(); it++)
     {
         if(*it > last_seen)
         {
@@ -36,19 +37,16 @@ void towers(std::vector<int>::iterator first, std::vector<int>::iterator last)
         }
     }
 
-    std::cout << max_occurrencies << " " << count << std::endl;
+    cout << max_occurrencies << " " << count << endl;
 }
 
 int main()
 {
-    // disable synchronization for streams
-    std::ios_base::sync_with_stdio(false);
-
     int bar_number = 0;
-    std::vector<int> bars;
+    vector<int> bars;
 
     // read the number of bars available
-    std::cin >> bar_number;
+    cin >> bar_number;
 
     bars.reserve(bar_number);
 
@@ -56,11 +54,11 @@ int main()
     for(int i = 0; i < bar_number; i++)
     {
         int x = 0;
-        std::cin >> x;
+        cin >> x;
         bars.push_back(x);
     }
 
-    towers(std::begin(bars), std::end(bars));
+    towers(bars);
 
     return 0;
 }
