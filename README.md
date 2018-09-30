@@ -9,7 +9,7 @@
 - [x] Sliding window maximum (http://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0)
 - [x] Next larger element (http://practice.geeksforgeeks.org/problems/next-larger-element/0)
 - [x] Towers (http://codeforces.com/problemset/problem/37/A?locale=en)
-- [ ] Finding team member (http://codeforces.com/problemset/problem/579/B?locale=en)
+- [x] Finding team member (http://codeforces.com/problemset/problem/579/B?locale=en)
 * STL
 - [ ] Megacity (http://codeforces.com/problemset/problem/424/B?locale=en)
 - [ ] Find pair (http://codeforces.com/problemset/problem/160/C?locale=en)
