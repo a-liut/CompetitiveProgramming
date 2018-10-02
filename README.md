@@ -10,10 +10,6 @@
 - [x] Next larger element (http://practice.geeksforgeeks.org/problems/next-larger-element/0)
 - [x] Towers (http://codeforces.com/problemset/problem/37/A?locale=en)
 - [x] Finding team member (http://codeforces.com/problemset/problem/579/B?locale=en)
-* STL
-- [ ] Megacity (http://codeforces.com/problemset/problem/424/B?locale=en)
-- [ ] Find pair (http://codeforces.com/problemset/problem/160/C?locale=en)
-- [ ] Two heaps (http://codeforces.com/problemset/problem/353/B?locale=en)
 * Searching and sorting
 - [ ] Inversion count (http://www.spoj.com/problems/INVCNT/)
 - [ ] Largest even number (http://practice.geeksforgeeks.org/problems/largest-even-number/0)
@@ -28,6 +24,10 @@
 - [ ] Number of ways (http://codeforces.com/problemset/problem/466/C?locale=en)
 - [ ] Little girl and maximum sum (http://codeforces.com/problemset/problem/276/C?locale=en)
 - [ ] Update the array (http://www.spoj.com/problems/UPDATEIT/)
+* STL
+- [ ] Megacity (http://codeforces.com/problemset/problem/424/B?locale=en)
+- [ ] Find pair (http://codeforces.com/problemset/problem/160/C?locale=en)
+- [ ] Two heaps (http://codeforces.com/problemset/problem/353/B?locale=en)
 * BIT and sparse table for static RMQ
 - [ ] Nested segments (http://codeforces.com/problemset/problem/652/D?locale=en)
 - [ ] Pashmak and Parmida's problem (http://codeforces.com/problemset/problem/459/D?locale=en)
