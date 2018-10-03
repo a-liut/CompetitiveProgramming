@@ -12,7 +12,7 @@
 - [x] Finding team member (http://codeforces.com/problemset/problem/579/B?locale=en)
 * Searching and sorting
 - [ ] Inversion count (http://www.spoj.com/problems/INVCNT/)
-- [ ] Largest even number (http://practice.geeksforgeeks.org/problems/largest-even-number/0)
+- [x] Largest even number (http://practice.geeksforgeeks.org/problems/largest-even-number/0)
 * Trees
 - [ ] Firing employees (http://practice.geeksforgeeks.org/problems/firing-employees/0)
 - [ ] Check for BST (http://practice.geeksforgeeks.org/problems/check-for-bst/1)
