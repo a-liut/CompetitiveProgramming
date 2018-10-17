@@ -15,7 +15,7 @@
 - [x] Largest even number (http://practice.geeksforgeeks.org/problems/largest-even-number/0)
 * Trees
 - [x] Firing employees (http://practice.geeksforgeeks.org/problems/firing-employees/0)
-- [ ] Check for BST (http://practice.geeksforgeeks.org/problems/check-for-bst/1)
+- [x] Check for BST (http://practice.geeksforgeeks.org/problems/check-for-bst/1)
 - [ ] Preorder traversal and BST (http://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0)
 - [ ] Maximum path sum (http://practice.geeksforgeeks.org/problems/maximum-path-sum/1)
 * Prefix sum: Binary indexed tree
