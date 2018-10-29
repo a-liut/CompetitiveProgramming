@@ -16,7 +16,7 @@
 * Trees
 - [x] Firing employees (http://practice.geeksforgeeks.org/problems/firing-employees/0)
 - [x] Check for BST (http://practice.geeksforgeeks.org/problems/check-for-bst/1)
-- [ ] Preorder traversal and BST (http://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0)
+- [x] Preorder traversal and BST (http://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0)
 - [ ] Maximum path sum (http://practice.geeksforgeeks.org/problems/maximum-path-sum/1)
 * Prefix sum: Binary indexed tree
 - [ ] Ilya and Queries (http://codeforces.com/problemset/problem/313/B?locale=en)
