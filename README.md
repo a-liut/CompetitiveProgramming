@@ -21,7 +21,7 @@
 * Prefix sum: Binary indexed tree
 - [x] Ilya and Queries (http://codeforces.com/problemset/problem/313/B?locale=en)
 - [x] Alice, Bob and chocolate (http://codeforces.com/problemset/problem/6/C?locale=en)
-- [ ] Number of ways (http://codeforces.com/problemset/problem/466/C?locale=en)
+- [x] Number of ways (http://codeforces.com/problemset/problem/466/C?locale=en)
 - [x] Little girl and maximum sum (http://codeforces.com/problemset/problem/276/C?locale=en)
 - [ ] Update the array (http://www.spoj.com/problems/UPDATEIT/)
 * STL
