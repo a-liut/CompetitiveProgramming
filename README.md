@@ -23,7 +23,7 @@
 - [x] Alice, Bob and chocolate (http://codeforces.com/problemset/problem/6/C?locale=en)
 - [x] Number of ways (http://codeforces.com/problemset/problem/466/C?locale=en)
 - [x] Little girl and maximum sum (http://codeforces.com/problemset/problem/276/C?locale=en)
-- [ ] Update the array (http://www.spoj.com/problems/UPDATEIT/)
+- [x] Update the array (http://www.spoj.com/problems/UPDATEIT/)
 * STL
 - [ ] Megacity (http://codeforces.com/problemset/problem/424/B?locale=en)
 - [ ] Find pair (http://codeforces.com/problemset/problem/160/C?locale=en)
