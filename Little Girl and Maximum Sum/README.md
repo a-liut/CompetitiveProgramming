@@ -1,5 +1,7 @@
 # Little Girl and Maximum Sum
 
+## Solution
+
 The little girl needs to find a permutation of the input values such that the queries return the maximum possible sum. This can be done by placing the highest values into locations that are involved the most by the queries.
 
 In order to find the solution we need to perform several steps:
@@ -14,7 +16,7 @@ In order to make the range sum queries efficient, the algorithm uses a BIT wich 
 
 Assigning the highest values to the most involved locations guarantees that the value is considered the maximum number of queries possible, thus the overall sum is for sure the maximum possible.
 
-# Complexity
+## Complexity
 
 The complexity for each operation is:
 

@@ -1,5 +1,7 @@
 # Preorder Traversal and BST
 
+## Solution
+
 The preorder traversal impose on the linearized element a precise order. For each element, after printing the element value, smaller children are printed first, then the bigger ones. If in the sequence of the bigger nodes there are some element that are lower than the parent, then the tree is not a BST because the BST property is violated.
 
 To check that the sequence is a valid BST preorder traversal linearization, the algorithm use a stack to maintain the traversed nodes.
@@ -12,7 +14,7 @@ First, the root of the tree is pushed into the stack, then it procedes as follow
 
 The algorithm ends when all nodes are checked respecting the BST property.
 
-# Complexity
+## Complexity
 
 The algorithm does a linear scan of the input array and each item is pushed and popped from the stack at least once.
 So, the algorithm takes O(n) time and use O(n) additional space i.e. the stack.

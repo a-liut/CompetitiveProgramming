@@ -1,5 +1,7 @@
 # Firing employees
 
+## Solution
+
 The employees can be organized as a tree and each node value is the rank of the corresponding employee. Thus, deciding whether an employee is blacklisted or not is a simple variant of DFS in which we maintain the number of previous nodes traversed and then check the blacklisting property.
 
 We use an implicit representation of the tree, storing seniors in a vector.
@@ -11,7 +13,7 @@ For an employee i, let p be its parent, then:
 
 When all counters are computed, we just scan them checking whether the respective employee is blacklisted.
 
-# Complexity
+## Complexity
 
 The algorithm is divided in two parts:
 
