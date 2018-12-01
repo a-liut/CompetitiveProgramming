@@ -25,7 +25,7 @@
 - [x] Little girl and maximum sum (http://codeforces.com/problemset/problem/276/C?locale=en)
 - [x] Update the array (http://www.spoj.com/problems/UPDATEIT/)
 * STL
-- [ ] Megacity (http://codeforces.com/problemset/problem/424/B?locale=en)
+- [x] Megacity (http://codeforces.com/problemset/problem/424/B?locale=en)
 - [ ] Find pair (http://codeforces.com/problemset/problem/160/C?locale=en)
 - [ ] Two heaps (http://codeforces.com/problemset/problem/353/B?locale=en)
 * BIT and sparse table for static RMQ
