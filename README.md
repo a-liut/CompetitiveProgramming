@@ -26,7 +26,7 @@
 - [x] Update the array (http://www.spoj.com/problems/UPDATEIT/)
 * STL
 - [x] Megacity (http://codeforces.com/problemset/problem/424/B?locale=en)
-- [ ] Find pair (http://codeforces.com/problemset/problem/160/C?locale=en)
+- [x] Find pair (http://codeforces.com/problemset/problem/160/C?locale=en)
 - [ ] Two heaps (http://codeforces.com/problemset/problem/353/B?locale=en)
 * BIT and sparse table for static RMQ
 - [ ] Nested segments (http://codeforces.com/problemset/problem/652/D?locale=en)
