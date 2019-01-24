@@ -32,7 +32,7 @@
 - [x] Nested segments (http://codeforces.com/problemset/problem/652/D?locale=en)
 - [ ] Pashmak and Parmida's problem (http://codeforces.com/problemset/problem/459/D?locale=en)
 * Mo's algorithm
-- [ ] Powerful array (http://codeforces.com/contest/86/problem/D)
+- [ ] (time exceeded) Powerful array (http://codeforces.com/contest/86/problem/D)
 - [ ] Tree and queries (http://codeforces.com/contest/375/problem/D)
 * Segment Trees and Lazy propagation
 - [ ] Powerful array using a segment tree
