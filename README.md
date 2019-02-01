@@ -44,7 +44,7 @@
 - [ ] Fox and names (http://codeforces.com/problemset/problem/510/C?locale=en)
 * Graphs: SCC, Single-Source shortest path
 - [x] Learning languages (http://codeforces.com/problemset/problem/277/A?locale=en)
-- [ ] Checkpost (http://codeforces.com/problemset/problem/427/C?locale=en)
+- [x] Checkpost (http://codeforces.com/problemset/problem/427/C?locale=en)
 * Graphs: Minimum spanning tree
 - [ ] Minimum spanning tree (http://www.spoj.com/problems/MST/)
 - [ ] Strange food chain (http://www.spoj.com/problems/CHAIN/)
