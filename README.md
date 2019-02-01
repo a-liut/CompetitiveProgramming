@@ -39,11 +39,11 @@
 - [ ] Tree and queries using a segment tree
 - [ ] Circular RMQ (http://codeforces.com/problemset/problem/52/C)
 * Graphs: BFS, DFS, Topological sort
-- [X] X total shapes (http://practice.geeksforgeeks.org/problems/x-total-shapes/0)
-- [X] isBipartite (http://practice.geeksforgeeks.org/problems/bipartite-graph/1)
+- [x] X total shapes (http://practice.geeksforgeeks.org/problems/x-total-shapes/0)
+- [x] isBipartite (http://practice.geeksforgeeks.org/problems/bipartite-graph/1)
 - [ ] Fox and names (http://codeforces.com/problemset/problem/510/C?locale=en)
 * Graphs: SCC, Single-Source shortest path
-- [ ] Learning languages (http://codeforces.com/problemset/problem/277/A?locale=en)
+- [x] Learning languages (http://codeforces.com/problemset/problem/277/A?locale=en)
 - [ ] Checkpost (http://codeforces.com/problemset/problem/427/C?locale=en)
 * Graphs: Minimum spanning tree
 - [ ] Minimum spanning tree (http://www.spoj.com/problems/MST/)
