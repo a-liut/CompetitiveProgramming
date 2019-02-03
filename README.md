@@ -46,7 +46,7 @@
 * HLD and Centroid Decomposition of Trees
 - [ ] OPTIONAL: Xenia and Tree (http://codeforces.com/problemset/problem/342/E?locale=en)
 * Graphs: Minimum spanning tree
-- [ ] Minimum spanning tree (http://www.spoj.com/problems/MST/)
+- [x] Minimum spanning tree (http://www.spoj.com/problems/MST/)
 * Greedy algorithms
 - [ ] N meetings in one room (http://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0)
 - [ ] Magic numbers (http://codeforces.com/problemset/problem/320/A?locale=en)
