@@ -51,7 +51,7 @@
 - [x] N meetings in one room (http://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0)
 - [x] Magic numbers (http://codeforces.com/problemset/problem/320/A?locale=en)
 - [x] Wilbur and array (http://codeforces.com/problemset/problem/596/B?locale=en)
-- [ ] Alternative thinking (http://codeforces.com/problemset/problem/603/A?locale=en)
+- [x] Alternative thinking (http://codeforces.com/problemset/problem/603/A?locale=en)
 - [ ] Lexicographically maximum subsequence (http://codeforces.com/problemset/problem/196/A?locale=en)
 - [ ] Woodcutters (http://codeforces.com/contest/545/problem/C?locale=en)
 - [ ] Queue (http://codeforces.com/problemset/problem/141/C?locale=en)
