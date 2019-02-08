@@ -56,7 +56,7 @@
 - [x] Woodcutters (http://codeforces.com/contest/545/problem/C?locale=en)
 - [x] (*Codeforces runtime error*) Queue (http://codeforces.com/problemset/problem/141/C?locale=en)
 * Dynamic programming
-- [ ] Longest common subsequence (https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)
+- [x] Longest common subsequence (https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)
 - [ ] 0-1 Knapsack (http://www.practice.geeksforgeeks.org/problem-page.php?pid=909)
 - [ ] Longest increasing subsequence (https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0)
 - [ ] Minimum number of jumps (https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0)
