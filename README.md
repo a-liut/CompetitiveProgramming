@@ -54,7 +54,7 @@
 - [x] Alternative thinking (http://codeforces.com/problemset/problem/603/A?locale=en)
 - [x] Lexicographically maximum subsequence (http://codeforces.com/problemset/problem/196/A?locale=en)
 - [x] Woodcutters (http://codeforces.com/contest/545/problem/C?locale=en)
-- [ ] Queue (http://codeforces.com/problemset/problem/141/C?locale=en)
+- [x] (*Codeforces runtime error*) Queue (http://codeforces.com/problemset/problem/141/C?locale=en)
 * Dynamic programming
 - [ ] Longest common subsequence (https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)
 - [ ] 0-1 Knapsack (http://www.practice.geeksforgeeks.org/problem-page.php?pid=909)
