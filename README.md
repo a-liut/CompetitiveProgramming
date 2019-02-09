@@ -57,7 +57,7 @@
 - [x] (*Codeforces runtime error*) Queue (http://codeforces.com/problemset/problem/141/C?locale=en)
 * Dynamic programming
 - [x] Longest common subsequence (https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)
-- [ ] 0-1 Knapsack (http://www.practice.geeksforgeeks.org/problem-page.php?pid=909)
+- [x] 0-1 Knapsack (http://www.practice.geeksforgeeks.org/problem-page.php?pid=909)
 - [ ] Longest increasing subsequence (https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0)
 - [ ] Minimum number of jumps (https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0)
 - [ ] Edit distance (https://practice.geeksforgeeks.org/problems/edit-distance/0)
