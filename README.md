@@ -58,7 +58,7 @@
 * Dynamic programming
 - [x] Longest common subsequence (https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0)
 - [x] 0-1 Knapsack (http://www.practice.geeksforgeeks.org/problem-page.php?pid=909)
-- [ ] Longest increasing subsequence (https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0)
+- [x] Longest increasing subsequence (https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0)
 - [ ] Minimum number of jumps (https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0)
 - [ ] Edit distance (https://practice.geeksforgeeks.org/problems/edit-distance/0)
 - [ ] Longest bitonic subsequence (https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0)
