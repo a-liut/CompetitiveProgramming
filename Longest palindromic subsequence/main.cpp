@@ -6,7 +6,7 @@ using namespace std;
 
 int64_t palindromic(string &s)
 {
-	int64_t pal[s.length()][s.length()], i, j, k;
+	int64_t pal[s.length()][s.length()], i, j;
 
 	for (i = 0; i < s.length(); ++i)
 		for (j = 0; j < s.length(); ++j)
