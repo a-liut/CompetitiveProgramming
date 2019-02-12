@@ -64,7 +64,7 @@
 - [x] Longest bitonic subsequence (https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0)
 - [x] Subset sum (https://practice.geeksforgeeks.org/problems/subset-sum-problem/0)
 - [x] Vertex cover (http://www.spoj.com/problems/PT07X/)
-- [ ] Longest palindromic subsequence (https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0)
+- [x] Longest palindromic subsequence (https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0)
 * String algorithms
 - [ ] Longest prefix suffix (https://practice.geeksforgeeks.org/problems/longest-prefix-suffix/0)
 - [ ] Shift the string (https://www.codechef.com/problems/TASHIFT)
