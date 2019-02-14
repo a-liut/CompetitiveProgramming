@@ -37,7 +37,7 @@
 
 * [x] Megacity (<http://codeforces.com/problemset/problem/424/B?locale=en>)
 * [x] Find pair (<http://codeforces.com/problemset/problem/160/C?locale=en>)
-* [ ] Two heaps (<http://codeforces.com/problemset/problem/353/B?locale=en>)
+* [x] Two heaps (<http://codeforces.com/problemset/problem/353/B?locale=en>)
 
 * Segment Trees
 
