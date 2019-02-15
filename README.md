@@ -46,7 +46,7 @@
 * BIT and sparse table for static RMQ
 
 * [x] Nested segments (<http://codeforces.com/problemset/problem/652/D?locale=en>)
-* [ ] Pashmak and Parmida's problem (<http://codeforces.com/problemset/problem/459/D?locale=en>)
+* [x] *Pashmak and Parmida's problem (<http://codeforces.com/problemset/problem/459/D?locale=en>)
 
 * Mo's algorithm
 
