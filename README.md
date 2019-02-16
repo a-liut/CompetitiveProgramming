@@ -57,7 +57,7 @@
 
 * [x] X total shapes (<http://practice.geeksforgeeks.org/problems/x-total-shapes/0>)
 * [x] isBipartite (<http://practice.geeksforgeeks.org/problems/bipartite-graph/1>)
-* [ ] Fox and names (<http://codeforces.com/problemset/problem/510/C?locale=en>)
+* [x] Fox and names (<http://codeforces.com/problemset/problem/510/C?locale=en>)
 
 * Graphs: SCC, Single-Source shortest path
 
