@@ -50,7 +50,7 @@
 
 * Mo's algorithm
 
-* [x] (time exceeded>) Powerful array (<http://codeforces.com/contest/86/problem/D>)
+* [x] *(time exceeded>) Powerful array (<http://codeforces.com/contest/86/problem/D>)
 * [x] Tree and queries (<http://codeforces.com/contest/375/problem/D>)
 
 * Graphs: BFS, DFS, Topological sort
@@ -105,5 +105,5 @@
 
 * Others:
 
-* [ ] Array copy (<https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text23012018.pdf>)
+* [x] Array copy (<https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text23012018.pdf>)
 * [ ] Triplets (<https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text14022018.pdf>)
