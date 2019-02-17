@@ -106,4 +106,4 @@
 * Others:
 
 * [x] Array copy (<https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text23012018.pdf>)
-* [ ] Triplets (<https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text14022018.pdf>)
+* [x] Triplets (<https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text14022018.pdf>)
