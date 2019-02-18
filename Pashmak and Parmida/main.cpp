@@ -73,11 +73,11 @@ int64_t pashmak(std::vector<int64_t> &elems)
 
 	for(int64_t &el : elems)
 	{
-		el = std::lower_bound(allElems.begin(), allElems.end(), el) - allElems.begin() + 1;
+		el = std::lower_bound(allElems.begin(), allElems.end(), el) - allElems.begin();
 	}
 
 	// Compute the SuffixCounter array: SC[i] = f(j, n, elems[j])
-	std::vector<int64_t> suffixCounter(elems.size()), counter(elems.size());
+	std::vector<int64_t> suffixCounter(elems.size(), 0), counter(elems.size(), 0);
 	bit<int64_t> tree(suffixCounter.size());
 	i = elems.size() - 1;
 	for(i = elems.size() - 1; i >= 0; --i)

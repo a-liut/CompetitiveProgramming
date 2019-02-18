@@ -46,11 +46,11 @@
 * BIT and sparse table for static RMQ
 
 * [x] Nested segments (<http://codeforces.com/problemset/problem/652/D?locale=en>)
-* [x] *Pashmak and Parmida's problem (<http://codeforces.com/problemset/problem/459/D?locale=en>)
+* [x] Pashmak and Parmida's problem (<http://codeforces.com/problemset/problem/459/D?locale=en>)
 
 * Mo's algorithm
 
-* [x] * Powerful array (<http://codeforces.com/contest/86/problem/D>)
+* [x] *Powerful array (<http://codeforces.com/contest/86/problem/D>)
 * [x] Tree and queries (<http://codeforces.com/contest/375/problem/D>)
 
 * Graphs: BFS, DFS, Topological sort
