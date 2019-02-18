@@ -4,10 +4,7 @@
 
 This problem can be solved using Mo's algorithm. It uses two additional arrays, one to store the occurrencies of any element in the array and the other to store the answers of the queries. This last part allows the algorithm avoid sorting the queries to maintain the original order of the queries.
 
-The functions add and remove are defined as follows:
-
-- ADD: Adds an element into the solution. The algorithm computes the difference between the old power of the element and the new power and add it to the current solution. Then, the number of occurrencies of the element is incremented.
-- REMOVE: Removes an element from the solution. It computes, similarly to ADD, the difference of the two powers and update the current answer. Then, the number of occurrencies of the current element is decreased.
+When adding or removing an element to the current window, the difference to be added or removed to the current query answer can be computed as $2 \times K * s + s$ (see <https://gist.github.com/CharlyGaleana/b7df36b42cec6a4ffb49>).
 
 ## Complexity
 

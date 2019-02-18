@@ -5,32 +5,23 @@
 
 #define MAX_EL 1000002 // 10^6
 
+using namespace std;
+
 struct query_t
 {
 	int64_t l, r, idx, answer;
 };
 
-int64_t power(int64_t val, int64_t occurrencies)
+void powerful_array(vector<int64_t> items, vector<query_t> queries)
 {
-	return val * (pow(occurrencies, 2));
-}
-
-void powerful_array(std::vector<int64_t> items, std::vector<query_t> queries)
-{
-	int64_t n = MAX_EL, s;
-	int64_t current_l = 0, current_r = 0, answer = 0, block = (int64_t)sqrt(items.size());
+	int64_t s;
+	int64_t current_l = 0, current_r = 0, answer = 0, block = (int64_t)sqrt(items.size() - 1);
 	
-	int64_t occurrencies[n], answers[queries.size()];
+	vector<int64_t> occurrencies(MAX_EL, 0), answers(queries.size(), 0);
 
-	for (int64_t i = 0; i < n; ++i)
-	{
-		occurrencies[i] = 0;
-	}
-
-	// Sort queries by left end if they belongs to different blocks
-	std::sort(queries.begin(), queries.end(), [&](query_t q1, query_t q2) {
-		int64_t first_bucket = (int64_t)floor(q1.l / block);
-		int64_t second_bucket = (int64_t)floor(q2.l / block);
+	auto cmp = [&](query_t const &q1, query_t const &q2) -> bool {
+		int64_t first_bucket = q1.l / block;
+		int64_t second_bucket = q2.l / block;
 
 		if (first_bucket != second_bucket)
 		{
@@ -39,15 +30,19 @@ void powerful_array(std::vector<int64_t> items, std::vector<query_t> queries)
 
 		// Otherwise sort them by their right end
 		return q1.r < q2.r;
-	});
+	};
 
+	// Sort queries by left end if they belongs to different blocks
+	sort(queries.begin(), queries.end(), cmp);
+
+	current_l = queries[0].l;
+	current_r = current_l - 1;
 	for (query_t &q : queries)
 	{
 		while (current_l < q.l)
 		{
-			s = power(items[current_l], occurrencies[items[current_l]]) - power(items[current_l], occurrencies[items[current_l]] - 1);
 			occurrencies[items[current_l]]--;
-			answer -= s;
+			answer -= 2 * occurrencies[items[current_l]] * items[current_l] + items[current_l];
 
 			current_l++;
 		}
@@ -56,7 +51,7 @@ void powerful_array(std::vector<int64_t> items, std::vector<query_t> queries)
 		{
 			current_l--;
 
-			answer += power(items[current_l], occurrencies[items[current_l]] + 1) - power(items[current_l], occurrencies[items[current_l]]);
+			answer += 2 * occurrencies[items[current_l]] * items[current_l] + items[current_l];
 			occurrencies[items[current_l]]++;
 		}
 
@@ -64,15 +59,14 @@ void powerful_array(std::vector<int64_t> items, std::vector<query_t> queries)
 		{
 			current_r++;
 
-			answer += power(items[current_r], occurrencies[items[current_r]] + 1) - power(items[current_r], occurrencies[items[current_r]]);
+			answer += 2 * occurrencies[items[current_r]] * items[current_r] + items[current_r];
 			occurrencies[items[current_r]]++;
 		}
 
 		while (current_r > q.r)
 		{
-			s = power(items[current_r], occurrencies[items[current_r]]) - power(items[current_r], occurrencies[items[current_r]] - 1);
 			occurrencies[items[current_r]]--;
-			answer -= s;
+			answer -= 2 * occurrencies[items[current_r]] * items[current_r] + items[current_r];
 
 			current_r--;
 		}
@@ -82,26 +76,26 @@ void powerful_array(std::vector<int64_t> items, std::vector<query_t> queries)
 
 	for(int64_t i = 0; i < queries.size(); ++i)
 	{
-		std::cout << answers[i] << std::endl;
+		cout << answers[i] << endl;
 	}
 }
 
 int main()
 {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 
-	int64_t n, t, x, i;
-	std::vector<int64_t> items;
-	std::vector<query_t> queries;
+	int64_t n, t, x, y, i;
+	vector<int64_t> items;
+	vector<query_t> queries;
 
-	std::cin >> n >> t;
+	cin >> n >> t;
 
 	items.resize(n + 1);
 	items[0] = 0;
 	for (i = 1; i <= n; i++)
 	{
-		std::cin >> x;
+		cin >> x;
 
 		items[i] = x;
 	}
@@ -109,17 +103,9 @@ int main()
 	queries.resize(t);
 	for (i = 0; i < t; i++)
 	{
-		query_t q;
+		cin >> x >> y;
 
-		std::cin >> x;
-		q.l = x;
-
-		std::cin >> x;
-		q.r = x;
-
-		q.idx = i;
-
-		queries[i] = q;
+		queries[i] = query_t {x, y, i};
 	}
 
 	powerful_array(items, queries);
