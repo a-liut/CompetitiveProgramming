@@ -41,7 +41,7 @@
 
 * Segment Trees
 
-* [ ] Circular RMQ (<http://codeforces.com/problemset/problem/52/C>)
+* [x] Circular RMQ (<http://codeforces.com/problemset/problem/52/C>)
 
 * BIT and sparse table for static RMQ
 
