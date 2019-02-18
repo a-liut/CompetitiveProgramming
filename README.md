@@ -50,7 +50,7 @@
 
 * Mo's algorithm
 
-* [x] *(time exceeded>) Powerful array (<http://codeforces.com/contest/86/problem/D>)
+* [x] * Powerful array (<http://codeforces.com/contest/86/problem/D>)
 * [x] Tree and queries (<http://codeforces.com/contest/375/problem/D>)
 
 * Graphs: BFS, DFS, Topological sort
@@ -80,7 +80,7 @@
 * [x] Alternative thinking (<http://codeforces.com/problemset/problem/603/A?locale=en>)
 * [x] Lexicographically maximum subsequence (<http://codeforces.com/problemset/problem/196/A?locale=en>)
 * [x] Woodcutters (<http://codeforces.com/contest/545/problem/C?locale=en>)
-* [x] (*Codeforces runtime error*>) Queue (<http://codeforces.com/problemset/problem/141/C?locale=en>)
+* [x] *Queue (<http://codeforces.com/problemset/problem/141/C?locale=en>)
 
 * Dynamic programming
 
@@ -98,10 +98,6 @@
 
 * [x] *Longest prefix suffix (<https://practice.geeksforgeeks.org/problems/longest-prefix-suffix/0>)
 * [x] Shift the string (<https://www.codechef.com/problems/TASHIFT>)
-
-* Exam simulation
-
-* [ ] Misha and forest (<http://codeforces.com/problemset/problem/501/C?locale=en>)
 
 * Others:
 
