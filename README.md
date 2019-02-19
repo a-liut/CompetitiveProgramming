@@ -80,7 +80,7 @@
 * [x] Alternative thinking (<http://codeforces.com/problemset/problem/603/A?locale=en>)
 * [x] Lexicographically maximum subsequence (<http://codeforces.com/problemset/problem/196/A?locale=en>)
 * [x] Woodcutters (<http://codeforces.com/contest/545/problem/C?locale=en>)
-* [x] *Queue (<http://codeforces.com/problemset/problem/141/C?locale=en>)
+* [x] Queue (<http://codeforces.com/problemset/problem/141/C?locale=en>)
 
 * Dynamic programming
 
