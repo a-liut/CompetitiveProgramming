@@ -5,8 +5,6 @@
 #include <math.h>
 #include <sstream>
 
-#define PRINT_VEC(lab, v) cout << lab << "["; for(auto x : v) cout << x << " "; cout << "]" << endl;
-
 #define LEFT(x) 2 * x + 1
 #define RIGHT(x) 2 * x + 2
 
@@ -100,11 +98,9 @@ class segment_tree
 			// apply pending updates
 			if(lazy_tree[pos] != 0)
 			{
-				// cout << "inc: applying lazy updates to " << pos << " : add " << lazy_tree[pos] << endl;
 				tree[pos] += lazy_tree[pos];
 				if(s_lo != s_hi)
 				{
-					// cout << "inc: updating also children: add " << lazy_tree[pos] << " to " << LEFT(pos) << ", " << RIGHT(pos) << endl;
 					lazy_tree[LEFT(pos)] += lazy_tree[pos];
 					lazy_tree[RIGHT(pos)] += lazy_tree[pos];
 				}
@@ -119,7 +115,6 @@ class segment_tree
 			// total overlap: postpone update
 			if(r_lo <= s_lo && r_hi >= s_hi)
 			{
-				// cout << "inc: found total overlap. Adding " << val << " to tree["<< pos << "] = " << tree[pos] << endl;
 				tree[pos] += val;
 				if(s_lo != s_hi)
 				{
@@ -142,23 +137,13 @@ class segment_tree
 			int c = size() - 1;
 			if (r_lo <= r_hi)
 			{
-				// cout << "simple inc" << endl;
 				_inc(r_lo, r_hi, 0, c, 0, val);
 			}
 			else
 			{
-				// cout << "circular inc (" << r_lo << ", " << r_hi << ")" << endl;
-				// cout << "--- first inc 0-" << r_hi << endl;
 				_inc(0, r_hi, 0, c, 0, val);
-				// cout << "--- second inc "<< r_lo << "-" << c << endl;
 				_inc(r_lo, c, 0, c, 0, val);
 			}
-		}
-
-		void print()
-		{
-			PRINT_VEC("tree", tree);
-			PRINT_VEC("lazy_tree", lazy_tree);
 		}
 };
 
@@ -198,16 +183,8 @@ int main()
 		}
 
 		if (com_idx == 2)
-		{
-			// cout << "rmq: " << com_args[0] << ", " << com_args[1] << endl;
 			cout << st.rmq(com_args[0], com_args[1]) << endl;
-		}
 		else
-		{
-			// cout << "inc: " << com_args[0] << ", " << com_args[1] << ", " << com_args[2] << endl;
 			st.inc(com_args[0], com_args[1], com_args[2]);
-		}
-		
-		// st.print();
 	}
 }
